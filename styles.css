@@ -80,3 +80,25 @@ footer p {
   letter-spacing: 1px;
   font-size: 12px;
 }
+
+@media (max-width: 600px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  #level-title {
+    font-size: 1.4rem;
+    margin: 20px 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
