@@ -1,0 +1,82 @@
+/* Reset and flex layout */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #011F3F;
+  display: flex;
+  flex-direction: column;
+  font-family: "Press Start 2P", cursive;
+  overflow: hidden; /* 🚫 Prevent scrollbars */
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Updated: remove large % margin from title */
+#level-title {
+  font-size: 2rem;
+  margin: 10px 20px;
+  color: #FEF2BF;
+  text-align: center;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+
+/* Responsive container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+/* Smaller buttons for better fit */
+.btn {
+  height: 140px;
+  width: 140px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.yellow { background-color: yellow; }
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Final fixed footer style */
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  color: #fff;
+  background-color: #222;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
