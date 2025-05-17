@@ -52,7 +52,7 @@ function checkAnswer(currentLevel) {
 
         startOver();
 
-        $("#level-title").text("Game Over! High Score: " + highScore + ". Press Any Key to Restart");
+        $("#level-title").text("Game Over! High Score: " + highScore + ". Tap or Press Any Key to Restart");
 
 
         startOver();
@@ -71,12 +71,12 @@ function startOver() {
 
 
 
-$(document).keydown(function () {
-    if (!started) {
-        $("#level-title").text("Level " + level);
-        nextSequence();
-        started = true;
-    }
+$(document).on("keydown touchstart", function () {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
 });
 
 
